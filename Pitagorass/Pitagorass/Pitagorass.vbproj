@@ -70,11 +70,33 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Formularios\AreaCircunferencia.Designer.vb">
+      <DependentUpon>AreaCircunferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AreaCircunferencia.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Formularios\CircuitoParalelo.Designer.vb">
+      <DependentUpon>CircuitoParalelo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CircuitoParalelo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CircuitoSerie.Designer.vb">
+      <DependentUpon>CircuitoSerie.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CircuitoSerie.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\ClaseAC.vb" />
+    <Compile Include="Clases\ClaseCP.vb" />
+    <Compile Include="Clases\ClaseCS.vb" />
+    <Compile Include="Clases\ClasePitagoras.vb" />
+    <Compile Include="Formularios\Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -92,8 +114,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Formularios\Pitagoras.Designer.vb">
+      <DependentUpon>Pitagoras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Pitagoras.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\AreaCircunferencia.resx">
+      <DependentUpon>AreaCircunferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CircuitoParalelo.resx">
+      <DependentUpon>CircuitoParalelo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CircuitoSerie.resx">
+      <DependentUpon>CircuitoSerie.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Pitagoras.resx">
+      <DependentUpon>Pitagoras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
